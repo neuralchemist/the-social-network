@@ -12,7 +12,6 @@ import Skeleton from "@mui/material/Skeleton";
 import { stories_data } from "./data/stories_data";
 
 const ImageListSkeleton = () => {
-  const counts = [1, 2, 3, 4];
   return (
     <ImageList sx={{ height: 450 }} variant="masonry">
       {stories_data.map((story, index) => (
