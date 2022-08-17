@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// mui 5
+import Stack from "@mui/material/Stack";
+import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
+// custom components
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+// custom context
+import { useMode } from "./context/ThemeModeContext";
+
+const AppStack = styled(Stack)(({ theme }) => ({
+  backgroundColor: theme.palette.background.default,
+  color: theme.palette.text.primary,
+}));
 
 function App() {
+  const modeState = useMode();
+
+  const darkTheme = createTheme({
+    palette: {
+      mode: modeState?.mode,
+    },
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <AppStack direction="column">
+        <Navbar />
+        <Home />
+      </AppStack>
+    </ThemeProvider>
   );
 }
 
