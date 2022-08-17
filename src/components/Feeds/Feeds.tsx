@@ -9,7 +9,6 @@ import { posts_data } from './Data/posts_data'
 
 function Feeds() {
   const [loading, setLoading] = useState(true);
-  const counts = [1, 2, 3, 4, 5];
 
   useEffect(() => {
     setTimeout(() => {
