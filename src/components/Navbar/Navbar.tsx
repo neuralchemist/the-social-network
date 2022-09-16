@@ -36,7 +36,7 @@ function Navbar() {
       <CustomToolbar>
         {/* Logo */}
         <LogoDesktop>
-          <Typography variant="h6">Social Network</Typography>
+          <Typography variant="h6">The Social Network</Typography>
         </LogoDesktop>
 
         <LogoMobile>

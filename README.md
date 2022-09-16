@@ -1,47 +1,110 @@
-# Getting Started with Create React App
+# The Social Network
+
+## Table of Contents
+
+- [About](#about)
+- [Features and Stack](#features-and-stack)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+- [Future Work](#challenges)
+- [Create React App](#bootstrapped-with-create-react-app)
+
+## About
+
+**Buy Buy** is a mobile friendly e-commerce web-service to sell and recommend products to users. It uses stripe to receive secured payments.
+The service is targeted for companies who wants to sell their products online from their own unique custom website.
+
+## Features and Stack
+
+### Features
+
+- fully responsive with support for mobile, tablet and desktop device to increase traffic.
+- product cart with animation to increase user interaction and retention.
+- add, remove product in cart.
+- increment, decrement product quantity in cart
+- promotion bar to show special offers.
+- featured bar to show special product.
+- Marquee showing product recommendation.
+- Multi-step form with validation to obtain user information.
+- stripe payment system to receive secured online payment.
+- react useState and Context hook to persist and share state in the app.
+- react useEffect hook and axios to consume external APIs.
+- react-hook-form to maintain form states.
+- end-end-tested with cypress.
+- documented for code maintainability.
+- fully automated CI / CD pipeline implemented with github and github actions.
+- deployed and hosted in firebase.
+
+### Stack
+
+- React
+- React Router
+- React Hook Form
+- Material UI
+- Axios
+- cypress
+- firebase
+- github
+- github actions
+
+## Screenshots
+
+- Landing Page (desktop view)
+
+<img src="screenshots/landing-page-desktop.png" width="400" height="500">
+
+- Cart and Product Recommendation page (tablet view)
+
+<img src="screenshots/recommendation-tablet.png" width="400" height="500">
+
+- User Information with Form Validation (mobile view)
+
+<img src="screenshots/user-information-mobile.png" width="375" height="800">
+
+- Checkout Stripe (mobile view)
+
+<img src="screenshots/checkout-stripe-mobile.png" width="375" height="500">
+
+## Getting started
+
+Below you'll find the instructions for setting up the project locally
+
+### Clone repo and install dependencies
+
+```bash
+# Clone the repo
+gh repo clone neuralchemist/BuyBuy
+
+# Install dependencies
+cd BuyBuy
+npm install
+```
+
+### Add env variables
+
+Create `.env.local` file, and add stripe keys
+
+### Start the app
+
+```bash
+# Start development server
+npm start
+```
+
+The app should be running at: [http://localhost:3000](http://localhost:3000/)
+
+## Future Work
+
+- Add caching mechanism using react query to reduce network request when user hop from pages.
+- cache user cart using local storage or react query so that user can close browser and still have them when they revisit.
+- create an account with using email and password
+- authenticate using Facebook, GitHub or Google
+- fully functional stripe payment implemented with firebase cloud.
+
+These are some of the features I want to implement or reuse in this projects from some of my other projects.
+
+## Bootstrapped with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# the-social-network
+For the detailed description of available scripts see [CRA Documentation](https://create-react-app.dev/docs/available-scripts)
