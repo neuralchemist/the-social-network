@@ -40,15 +40,15 @@
 
 - Landing Page (desktop view)
 
-<img src="screenshots/landing-desktop.png" width="400" height="500">
+<img src="screenshots/landing-desktop.png" width="400" height="400">
 
 - Light Theme (desktop view)
 
-<img src="screenshots/light-theme-desktop.png" width="400" height="500">
+<img src="screenshots/light-theme-desktop.png" width="400" height="400">
 
 - Skeleton Loading (desktop view)
 
-<img src="screenshots/skeleton-desktop.png" width="400" height="500">
+<img src="screenshots/skeleton-desktop.png" width="400" height="400">
 
 - Landing Page (mobile view)
 
@@ -56,11 +56,11 @@
 
 - Menu (mobile view)
 
-<img src="screenshots/menu-mobile.png" width="375" height="400">
+<img src="screenshots/menu-mobile.png" width="375" height="500">
 
 - Drawer (mobile view)
 
-<img src="screenshots/drawer-mobile.png" width="375" height="400">
+<img src="screenshots/drawer-mobile.png" width="375" height="500">
 
 ## Getting started
 
@@ -90,7 +90,7 @@ The app should be running at: [http://localhost:3000](http://localhost:3000/)
 ## Future Work
 
 - Setup firstore database for user feeds using firebase backend-as-a-service.
-- create an account with using email and password
+- create an account using email and password
 - authenticate using Facebook, GitHub or Google
 
 These are some of the features I want to implement in the future or reuse from some of my other projects.
