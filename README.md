@@ -11,26 +11,19 @@
 
 ## About
 
-**Buy Buy** is a mobile friendly e-commerce web-service to sell and recommend products to users. It uses stripe to receive secured payments.
-The service is targeted for companies who wants to sell their products online from their own unique custom website.
+**The Social Network** is a mobile friendly social media platform to share contents with people. 
 
 ## Features and Stack
 
 ### Features
 
 - fully responsive with support for mobile, tablet and desktop device to increase traffic.
-- product cart with animation to increase user interaction and retention.
-- add, remove product in cart.
-- increment, decrement product quantity in cart
-- promotion bar to show special offers.
-- featured bar to show special product.
-- Marquee showing product recommendation.
-- Multi-step form with validation to obtain user information.
-- stripe payment system to receive secured online payment.
-- react useState and Context hook to persist and share state in the app.
-- react useEffect hook and axios to consume external APIs.
-- react-hook-form to maintain form states.
-- end-end-tested with cypress.
+- left bar in desktop, left drawer in mobile and tablet.
+- feed card with avatar.
+- group avatar for online friends.
+- menu for user information.
+- skeleton on loading.
+- switch to toggle between light and dark theme.
 - documented for code maintainability.
 - fully automated CI / CD pipeline implemented with github and github actions.
 - deployed and hosted in firebase.
@@ -38,11 +31,7 @@ The service is targeted for companies who wants to sell their products online fr
 ### Stack
 
 - React
-- React Router
-- React Hook Form
 - Material UI
-- Axios
-- cypress
 - firebase
 - github
 - github actions
@@ -51,19 +40,27 @@ The service is targeted for companies who wants to sell their products online fr
 
 - Landing Page (desktop view)
 
-<img src="screenshots/landing-page-desktop.png" width="400" height="500">
+<img src="screenshots/landing-desktop.png" width="400" height="500">
 
-- Cart and Product Recommendation page (tablet view)
+- Light Theme (desktop view)
 
-<img src="screenshots/recommendation-tablet.png" width="400" height="500">
+<img src="screenshots/light-theme-desktop.png" width="400" height="500">
 
-- User Information with Form Validation (mobile view)
+- Skeleton Loading (desktop view)
 
-<img src="screenshots/user-information-mobile.png" width="375" height="800">
+<img src="screenshots/skeleton-desktop.png" width="400" height="500">
 
-- Checkout Stripe (mobile view)
+- Landing Page (mobile view)
 
-<img src="screenshots/checkout-stripe-mobile.png" width="375" height="500">
+<img src="screenshots/landing-mobile.png" width="375" height="400">
+
+- Menu (mobile view)
+
+<img src="screenshots/menu-mobile.png" width="375" height="400">
+
+- Drawer (mobile view)
+
+<img src="screenshots/drawer-mobile.png" width="375" height="400">
 
 ## Getting started
 
@@ -73,16 +70,13 @@ Below you'll find the instructions for setting up the project locally
 
 ```bash
 # Clone the repo
-gh repo clone neuralchemist/BuyBuy
+gh repo clone neuralchemist/the-social-network
 
 # Install dependencies
-cd BuyBuy
+cd the-social-network
 npm install
 ```
 
-### Add env variables
-
-Create `.env.local` file, and add stripe keys
 
 ### Start the app
 
@@ -95,13 +89,11 @@ The app should be running at: [http://localhost:3000](http://localhost:3000/)
 
 ## Future Work
 
-- Add caching mechanism using react query to reduce network request when user hop from pages.
-- cache user cart using local storage or react query so that user can close browser and still have them when they revisit.
+- Setup firstore database for user feeds using firebase backend-as-a-service.
 - create an account with using email and password
 - authenticate using Facebook, GitHub or Google
-- fully functional stripe payment implemented with firebase cloud.
 
-These are some of the features I want to implement or reuse in this projects from some of my other projects.
+These are some of the features I want to implement in the future or reuse from some of my other projects.
 
 ## Bootstrapped with Create React App
 
