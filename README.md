@@ -32,27 +32,27 @@
 
 - React
 - Material UI
-- firebase
-- github
-- github actions
+- Firebase
+- Github
+- Github actions
 
 ## Screenshots
 
 - Landing Page (desktop view)
 
-<img src="screenshots/landing-desktop.png" width="400" height="400">
+<img src="screenshots/landing-desktop.png" width="600" height="600">
 
 - Light Theme (desktop view)
 
-<img src="screenshots/light-theme-desktop.png" width="400" height="400">
+<img src="screenshots/light-theme-desktop.png" width="600" height="400">
 
 - Skeleton Loading (desktop view)
 
-<img src="screenshots/skeleton-desktop.png" width="400" height="400">
+<img src="screenshots/skeleton-desktop.png" width="600" height="400">
 
 - Landing Page (mobile view)
 
-<img src="screenshots/landing-mobile.png" width="375" height="400">
+<img src="screenshots/landing-mobile.png" width="375" height="500">
 
 - Menu (mobile view)
 
