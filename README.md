@@ -70,7 +70,7 @@ Below you'll find the instructions for setting up the project locally
 
 ```bash
 # Clone the repo
-gh repo clone neuralchemist/the-social-network
+gir clone https://github.com/neuralchemist/the-social-network.git
 
 # Install dependencies
 cd the-social-network
